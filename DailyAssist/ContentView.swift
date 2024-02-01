@@ -8,7 +8,7 @@ struct ContentView: View {
                 NavigationLink(destination: TodaysNewsView()) {
                              Label("Today's News", systemImage: "newspaper")
                 }
-                NavigationLink(destination: AssignmentsView()) {
+                NavigationLink(destination: AssignmentView()) {
                     Label("Assignments", systemImage: "text.badge.checkmark")
                 }
                 NavigationLink(destination: SavedFilesView()) {
@@ -36,11 +36,6 @@ struct ContentView: View {
 
 // Placeholder Views for Navigation
 
-struct AssignmentsView: View {
-    var body: some View {
-        Text("Assignments Content")
-    }
-}
 
 struct SavedFilesView: View {
     var body: some View {

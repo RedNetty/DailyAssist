@@ -67,6 +67,7 @@ struct TodaysNewsView: View {
         }
 
     struct CategoryButton: View {
+        
         @State private var isHovering = false
         let category: String
         let isSelected: Bool
