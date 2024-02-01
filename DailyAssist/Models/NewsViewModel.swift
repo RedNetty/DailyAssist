@@ -1,10 +1,4 @@
-//
-//  NewsViewModels.swift
-//  DailyAssist
-//
-//  Created by Jack Coon on 1/31/24.
-//
-
+x   
 import Foundation
 import SwiftUI
 import SwiftSoup
@@ -61,7 +55,7 @@ class NewsViewModel: ObservableObject {
 
     
     private func categorizeNewsItem(title: String?, summary: String?) -> String {
-        // Enhanced keyword definitions for broader categorization
+        // keyword definitions for broader categorization
         let categories = [
             "World News": ["ukraine","gaza", "world", "china","international affairs", "global summit", "world leader", "UN", "NATO", "WHO", "foreign policy", "embassy", "sanctions", "human rights", "international crisis", "peace talks", "global economy", "climate summit", "G7", "G20", "EU", "Brexit", "ASEAN", "Middle East", "Asia-Pacific", "Africa", "Latin America", "European Union"],
             "Crime": ["murder", "homicide", "theft", "robbery", "assault", "crime", "fraud", "embezzlement", "scandal", "arrest", "investigation", "police", "FBI", "CIA", "law enforcement", "drug trafficking", "human trafficking", "cybercrime", "identity theft", "money laundering", "terrorist", "shooting", "stabbing", "burglary", "domestic violence", "sexual assault", "child abuse"],
@@ -72,7 +66,6 @@ class NewsViewModel: ObservableObject {
             "Economy": ["stock market", "NASDAQ", "Dow Jones", "S&P 500", "trading", "investment", "economy", "recession", "inflation", "deflation", "monetary policy", "fiscal policy", "central bank", "Federal Reserve", "European Central Bank", "cryptocurrency", "Bitcoin", "Ethereum", "ICO", "startup funding", "venture capital", "private equity", "IPO", "unemployment rate", "job market", "real estate", "housing market", "mortgage rates", "GDP", "trade deficit", "export", "import", "tariff", "trade war", "economic sanctions", "oil prices", "commodities market"],
             "Health": ["healthcare", "medical research", "COVID-19", "coronavirus", "pandemic", "vaccine", "immunization", "disease", "cancer", "heart disease", "diabetes", "mental health", "psychology", "wellness", "fitness", "nutrition", "diet", "obesity", "surgery", "hospital", "doctor", "nurse", "medicine", "pharmaceuticals", "drug approval", "FDA", "CDC", "WHO", "public health", "health policy", "insurance", "medicare", "medicaid", "health tech", "telemedicine", "biotech"],
             "Science": ["science", "research", "innovation", "NASA", "space", "astronomy", "astrophysics", "planet", "Mars mission", "space travel", "spaceX", "rocket", "physics", "chemistry", "biology", "genetics", "genome", "CRISPR", "climate change", "environment", "ecology", "sustainability", "renewable energy", "solar power", "wind power", "nuclear energy", "earthquake", "volcanology", "oceanography", "paleontology", "archaeology", "history", "anthropology", "STEM education", "scientific discovery", "quantum mechanics", "artificial intelligence research"]
-            // Additional categories and keywords can be added as needed
         ]
         
         let safeTitle = title?.lowercased() ?? ""
